@@ -1,0 +1,351 @@
+body {
+  background-color: #0E0625;
+  margin: 0;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/Roboto-Regular.ttf)
+}
+*{
+  font-family: Roboto;
+}
+
+.past-matches-header {
+  display: flex;
+  background-color: #CCCCFF;
+  border-bottom: 0.1rem solid;
+  border-color: grey;
+  color: black;
+}
+
+.header-component{
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  width: 10rem;
+  border-right: 0.1rem solid;
+  border-color: grey;
+  color: white;
+}
+.header-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+}
+.loginsection > a{
+  text-decoration: none;
+  color:antiquewhite;
+}
+.loginsection {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.login-nav:hover {
+  filter: brightness(150%);
+  font-weight: bold;
+  transition: 200ms;
+}
+.team-1-section{
+  font-size: 0.8rem;
+  display: flex;
+  color: black;
+  max-height: 1.8rem;
+  justify-content: space-between;
+}
+.team-2-section{
+  font-size: 0.8rem;
+  display: flex;
+  max-height: 1.8rem;
+  color: black;
+  justify-content: space-between;
+}
+.won {
+ background-color: rgba(127,255,212, 0.3); 
+}
+.loss {
+  background-color: rgba(255,102,102, 0.3);
+}
+
+.team-1-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  max-width: 7rem;
+  overflow: hidden;
+  align-items: center;
+  white-space: nowrap;
+}
+.team-2-left {
+  max-width: 7rem;
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+
+.team-1-right{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  gap: 0.3rem;
+  align-items: center;
+}
+.team-2-right{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  justify-content: space-between;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.team-1-left > img {
+  width: 3rem;
+  border: 1px solid;
+  border-color: rgba(0,0,0,0);
+  border-radius: 1rem;
+  padding-left: 0.2rem;
+}
+.team-2-left > img {
+  width: 3rem;
+  border-color: rgba(0,0,0,0);
+  border-radius: 1rem;
+  padding-left: 0.2rem;
+}
+
+.lads-logo{
+  width: 15%;
+}
+
+.fantasy-container{
+  color: white;
+}
+
+
+.fantasy-nav {
+  display: flex;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+.standings-nav{
+  display: flex;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-left: 2rem;
+  align-items: center;
+}
+.stats-nav{
+  display: flex;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-left: 4rem;
+  align-items: center;
+}
+
+
+.nav-bar-items > a{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.nav-bar-items{
+  display: flex;
+  margin-left: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-logo {
+  width: 5rem;
+}
+.nav-bar {
+  display: flex;
+  height: 5.5rem;
+  max-height: 5.5rem;
+  justify-content: space-between;
+  background-color: #474973;
+  font-size: 1rem;
+}
+.loginsection > a{
+  text-decoration: none;
+  color:antiquewhite;
+}
+.loginsection {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.login-nav:hover, .fantasy-nav:hover, .standings-nav:hover, .stats-nav:hover {
+  filter: brightness(150%);
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.fantasy-page-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100vh;
+}
+.fantasy-ranking-section{
+  color:white;
+  background-color: dodgerblue;
+}
+.fantasy-picks-section{
+  color:white;
+  background-color: mediumturquoise;
+}
+
+.fantasy-week-section{
+  display: flex;
+  color:violet;
+  font-size: 3rem;
+  background-color: aqua;
+  justify-content: center;
+}
+.fantasy-roster-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 1rem;
+  gap: 1rem;
+}
+.player-card{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 20px;
+  height: 60vh;
+  overflow: hidden;
+  background-color:#CCCCFF
+}
+.player-card > img {
+  width: 13rem;
+}
+.fantasy-time-left{
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+}
+.player-card-role-section{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+  background-color: #474973;
+  border: 1px solid;
+  border-color: rgba(0,0,0,0);
+}
+.player-card-desc{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.player-card-name{
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #474973;
+}
+.player-card-role-section > img {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.player-card-desc-left {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: black;
+}
+
+
+
+
+
+
+
+.series-block{
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 170px;
+  height: 65px;
+  border: 2px solid;
+  border-color:darkgray;
+  border-radius: 10px;
+
+
+
+  margin: 180px;
+}
+.series-block-top, .series-block-bottom {
+  display: inline-grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.series-block-left > img {
+  border: 1px solid;
+  border-color: rgba(0,0,0,0);
+  border-radius: 10px;
+  width: 3rem;
+}
+.series-block-left {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 9rem;
+  align-items: center;
+  border-right: 1px solid;
+  border-color:darkgray;
+  height: 2.1rem;
+  overflow: hidden;
+}
+.series-name {
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.series-score {
+  margin-right: 10px;
+}
+.series-won {
+  font-size: 16px;
+  font-weight: 900;
+}
+.series-loss {
+  font-size: 16px;
+  font-weight: 400;
+}
+.series-block-top {
+  border-bottom: 2px solid;
+  border-color:darkgray;
+}
+
+
+.stats-page-container{
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+.stats-header {
+  background-color: #CCCCFF;
+}
