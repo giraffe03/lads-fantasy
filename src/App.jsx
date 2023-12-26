@@ -2,13 +2,14 @@ import { useState } from 'react'
 import './App.css'
 import NavBar from './navbarstuff/NavBar'
 import Body from './homepagestuff/HomePage'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
   return (
-    <>
-    <NavBar />
-    </>
+    <BrowserRouter>
+      <NavBar />
+    </BrowserRouter>
   )
 }
 

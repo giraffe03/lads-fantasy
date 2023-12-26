@@ -1,6 +1,6 @@
 import React from 'react'
-import PolarAss from '../images/testimage.png'
-import EternalKings from '../images/eternalkings.png'
+import PolarAss from '../images/team-logo/testimage.png'
+import EternalKings from '../images/team-logo/eternalkings.png'
 
 
 // SeriesBlock will take in multiple properties
