@@ -3,24 +3,22 @@ import TeamCard from './TeamCard'
 
 
 
-export default function AllCards(){
-    return (
-        <div>
+export default function AllCards(props){
+    let allCardsArr = [];
+    let counter = 0;
+
+    props.data.forEach((element)=>{
+        allCardsArr.push(
             <TeamCard 
-            image={"https://riki.dotabuff.com/t/l/20nLXpEpLC1.png"}
-            name={'Eternal Kings'}
-            wins={7}
-            losses={5}
+            image={element.team.logo}
+            name={element.team.name}
             />
-            {/* <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard />
-            <TeamCard /> */}
+        )
+    })
+
+    return (
+        <div className="all-card-container">
+            {allCardsArr}
         </div>
     )
 }

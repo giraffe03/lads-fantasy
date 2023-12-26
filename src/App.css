@@ -344,8 +344,38 @@ body {
 
 .stats-page-container{
   display: grid;
-  grid-template-rows: 1fr 9fr;
 }
 .stats-header {
   background-color: #CCCCFF;
+}
+
+.all-card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 4rem;
+
+}
+
+
+.team-card-container {
+  display: grid;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0);
+  background-color:#474973;
+  width: 15rem;
+  margin: 1rem;
+  color: white;
+}
+.team-card-header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.team-card-logo > img {
+  max-width: 100%;
 }
