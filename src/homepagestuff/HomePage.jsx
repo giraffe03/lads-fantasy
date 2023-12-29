@@ -1,6 +1,7 @@
 import React from 'react'
 import HeaderComponent from './HeaderComponent'
 import data from './data'
+import LadsLogo from '../images/league-of-lads-transparent.png'
 
 
 export default function HomePage(){
@@ -12,22 +13,23 @@ export default function HomePage(){
         const rsum = dataObject.radiantKills.reduce((partialSum, a) => partialSum + a, 0);
         const dsum = dataObject.direKills.reduce((partialSum, a) => partialSum + a, 0);
         matchBlocks.push(
-            <HeaderComponent 
-                radiantLogo={dataObject.radiantTeam.logo}
-                direLogo={dataObject.direTeam.logo}
-                radiantKills={rsum}
-                direKills={dsum}
-                radiantName={dataObject.radiantTeam.name}
-                direName={dataObject.direTeam.name}
-                radiantWon={dataObject.didRadiantWin}
-                direWon={!dataObject.didRadiantWin}
-                dateY={timeArray[0]}
-                dateM={timeArray[1]}
-                dateD={timeArray[2]}
-                durationH={durationObject.hours}
-                durationM={durationObject.minutes}
-                durationS={durationObject.seconds}
-            />
+                <HeaderComponent 
+                    radiantLogo={dataObject.radiantTeam.logo ? dataObject.radiantTeam.logo :
+                        LadsLogo
+                    }
+                    direLogo={dataObject.direTeam.logo}
+                    radiantKills={rsum}
+                    direKills={dsum}
+                    radiantName={dataObject.radiantTeam.name}
+                    direName={dataObject.direTeam.name}
+                    radiantWon={dataObject.didRadiantWin}
+                    direWon={!dataObject.didRadiantWin}
+                    dateM={timeArray[1]}
+                    dateD={timeArray[2]}
+                    durationH={durationObject.hours}
+                    durationM={durationObject.minutes}
+                    durationS={durationObject.seconds}
+                />
         )
     })
 

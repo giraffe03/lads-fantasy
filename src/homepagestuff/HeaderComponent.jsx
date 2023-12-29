@@ -17,7 +17,7 @@ export default function HeaderComponent(props){
             <div className="header-header">
                 <div className="date-section">
                     {props.dateM}/{(props.dateD < 10)? `0${props.dateD}`:
-                     props.dateD}/{props.dateY}
+                     props.dateD}
                 </div>
                 <div className="duration-section">
                     {props.durationH}:{(props.durationM < 10)? `0${props.durationM}`: 
