@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import TeamCard from './TeamCard'
 
 
@@ -12,6 +12,7 @@ export default function AllCards(props){
             <TeamCard 
             image={element.team.logo}
             name={element.team.name}
+            plrlist={element.team.members}
             />
         )
     })

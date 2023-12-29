@@ -204,14 +204,14 @@ body {
 }
 .fantasy-picks-section{
   color:white;
-  background-color: mediumturquoise;
+  /* background-color: mediumturquoise; */
 }
 
 .fantasy-week-section{
   display: flex;
-  color:violet;
+  /* color:violet; */
   font-size: 3rem;
-  background-color: aqua;
+  /* background-color: aqua; */
   justify-content: center;
 }
 .fantasy-roster-section{
@@ -259,6 +259,8 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #474973;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .player-card-role-section > img {
   height: 2rem;
@@ -361,21 +363,70 @@ body {
 .team-card-container {
   display: grid;
   border: 1px solid;
+  grid-template-rows: 1fr 4fr;
   border-radius: 5px;
   border-color: rgba(0,0,0,0);
   background-color:#474973;
   width: 15rem;
+  height: 12rem;
   margin: 1rem;
   color: white;
+  overflow: hidden;
 }
 .team-card-header {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
+  z-index: 4;
+  border-bottom: 1px solid;
+  border-color: rgba(255,255,255,0.3);
 }
-.team-card-logo > img {
-  max-width: 100%;
+.team-card-logo {
+  overflow: hidden;
+}
+
+
+.team-card-logo-1 {
+  position: absolute;
+  z-index: 2;
+  width: 15rem;
+  height: 9rem;
+  background-color: #474973;
+}
+.team-card-logo-1:hover{
+  opacity: 0.1;
+}
+.tc-table {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+
+.tc-table-element {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  margin-left: 1rem;
+  border-bottom: 1px solid;
+}
+.tc-table-last-element{
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  margin-left: 1rem;
+}
+.tc-table-name {
+  white-space: nowrap;
+  overflow: hidden;
 }

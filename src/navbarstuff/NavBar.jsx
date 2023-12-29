@@ -6,7 +6,7 @@ import LadsLogo from '../images/league-of-lads-transparent.png'
 import LogInSignUp from './LogInSignUp'
 import HomePage from '../homepagestuff/HomePage'
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 
 export default function NavBar() {
     return (
